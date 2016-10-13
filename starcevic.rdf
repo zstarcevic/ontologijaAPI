@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#"
+     xml:base="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#jePrijatelj -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#jePrijatelj"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#pozna -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#pozna"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#imaCuru -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#imaCuru">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ZENA"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#imaDecka"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#imaDecka -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#imaDecka">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ZENA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ziviUGradu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ziviUGradu">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#GRAD"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ZENA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#imaGodina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#imaGodina">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ZENA"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#GRAD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#GRAD"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#OSOBA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#OSOBA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#OSOBA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ZENA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ZENA"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Bjelovar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Bjelovar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#GRAD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Garesnica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Garesnica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#GRAD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Mario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Mario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC"/>
+        <ziviUGradu rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Garesnica"/>
+        <pozna rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Petar"/>
+        <imaCuru rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Valerija"/>
+        <jePrijatelj rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Valerija"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Osijek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Osijek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#GRAD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Petar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Petar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#MUSKARAC"/>
+        <imaGodina rdf:datatype="&xsd;integer">19</imaGodina>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Valerija -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#Valerija">
+        <rdf:type rdf:resource="http://www.semanticweb.org/korisnik/ontologies/2016/10/moja_ontologija_starcevic#ZENA"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
